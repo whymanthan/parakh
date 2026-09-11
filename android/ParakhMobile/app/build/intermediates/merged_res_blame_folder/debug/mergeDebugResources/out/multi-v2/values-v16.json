@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.parakh.mobile.app-mergeDebugResources-68:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\manth\\.gradle\\caches\\transforms-4\\7db74a47f9308865057bad070e9589a5\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    }
+                }
+            ]
+        }
+    ]
+}

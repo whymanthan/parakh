@@ -1,0 +1,48 @@
+:root {
+  /* --- Core palette: "Regulatory Indigo" ---------------------------- */
+  --ink-950: #060a16;
+  --ink-900: #0a1024;
+  --ink-850: #0e1530;
+  --ink-800: #131c3d;
+  --ink-700: #1c274d;
+  --ink-600: #2a3766;
+  --ink-500: #445088;
+
+  --paper-100: #f4f1e8;
+  --paper-200: #e8e2d0;
+  --paper-muted: #a7a8c4;
+
+  --signal-amber: #e8a13d;
+  --signal-amber-strong: #ffb547;
+  --signal-teal: #34c9a3;
+  --signal-red: #ef5b5b;
+  --signal-rose: #e2496b;
+  --signal-gold: #e8c547;
+
+  --critical: #ef5b5b;
+  --high: #e8a13d;
+  --medium: #e8c547;
+  --low: #6fb3d9;
+  --pass: #34c9a3;
+
+  /* --- Type ----------------------------------------------------------- */
+  --font-display: 'Space Grotesk', 'IBM Plex Sans', sans-serif;
+  --font-body: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', monospace;
+
+  /* --- Scale ------------------------------------------------------------ */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  --shadow-panel: 0 20px 60px -20px rgba(0, 0, 0, 0.55);
+  --border-hair: 1px solid rgba(167, 168, 196, 0.16);
+}

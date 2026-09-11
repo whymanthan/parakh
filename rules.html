@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PARAKH — Rule Library</title>
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/rules.css">
+</head>
+<body data-page="rules">
+
+<div class="nav-overlay" data-nav-toggle-target></div>
+
+<div class="app-shell">
+  <aside class="sidenav">
+    <div class="brand">
+      <div class="brand-mark">P</div>
+      <div class="brand-text"><div class="name">PARAKH</div><div class="tag">Legal Metrology AI</div></div>
+      <button class="nav-close" type="button" data-nav-close aria-label="Close navigation">×</button>
+    </div>
+    <nav class="nav-group">
+      <div class="nav-label">Workspace</div>
+      <a class="nav-link" data-page="dashboard" href="index.html"><span class="dot"></span> Dashboard</a>
+      <a class="nav-link" data-page="scan" href="scan.html"><span class="dot"></span> Scan Product</a>
+      <a class="nav-link" data-page="rules" href="rules.html"><span class="dot"></span> Rule Library</a>
+    </nav>
+    <div class="sidenav-footer">Source: legal_metrology_national_standards_rules.json</div>
+  </aside>
+
+  <div>
+    <div class="mobile-topbar">
+      <div class="brand"><div class="brand-mark">P</div><div class="brand-text"><div class="name">PARAKH</div></div></div>
+      <button data-nav-toggle aria-label="Open navigation">☰</button>
+    </div>
+
+    <main class="main">
+      <div class="page-header">
+        <div>
+          <div class="eyebrow">National Standards Database</div>
+          <h1>Rule Library</h1>
+          <p class="sub">Every rule powering the engine, straight from the uploaded database — search, filter by category or severity, and check exact legal references before you act on a violation.</p>
+        </div>
+      </div>
+
+      <div class="rules-toolbar">
+        <input id="search-input" placeholder="Search by field, rule ID, condition or reference…">
+        <select id="category-filter"><option value="All">All categories</option></select>
+      </div>
+
+      <div class="pill-tabs">
+        <button class="pill-tab active" data-severity="All">All severities</button>
+        <button class="pill-tab" data-severity="High">High</button>
+        <button class="pill-tab" data-severity="Medium">Medium</button>
+        <button class="pill-tab" data-severity="Low">Low</button>
+      </div>
+
+      <div class="rule-count" id="rule-count"></div>
+      <div id="rule-list"></div>
+    </main>
+  </div>
+</div>
+
+<script type="module" src="js/app.js"></script>
+<script type="module" src="js/features/rules/rulesBrowser.js"></script>
+</body>
+</html>

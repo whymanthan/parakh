@@ -1,0 +1,18 @@
+.rule-search { margin-bottom: var(--space-5); }
+.rule-card { border: var(--border-hair); border-radius: var(--radius-md); padding: var(--space-4); margin-bottom: var(--space-3); background: rgba(255,255,255,0.015); }
+.rule-card .rhead { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--space-3); margin-bottom: var(--space-2); flex-wrap: wrap; }
+.rule-card .rid { font-family: var(--font-mono); font-size: 11px; color: var(--signal-amber); }
+.rule-card h3 { font-size: 16px; margin-bottom: 6px; }
+.rule-card .rcond { font-size: 13.5px; color: var(--paper-200); margin-bottom: var(--space-3); }
+.rule-card .rmeta-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); font-size: 12px; }
+@media (max-width: 700px) { .rule-card .rmeta-grid { grid-template-columns: 1fr 1fr; } }
+.rule-card .rmeta-grid .k { color: var(--paper-muted); text-transform: uppercase; letter-spacing: 0.06em; font-size: 10.5px; margin-bottom: 2px; }
+.rule-card .rmeta-grid .v { font-family: var(--font-mono); font-size: 12px; }
+.rule-card .examples { margin-top: var(--space-3); display: flex; gap: var(--space-3); flex-wrap: wrap; }
+.rule-card .ex { font-size: 12px; font-family: var(--font-mono); padding: 6px 10px; border-radius: 6px; }
+.rule-card .ex.ok { background: rgba(52,201,163,0.08); color: var(--pass); }
+.rule-card .ex.bad { background: rgba(239,91,91,0.08); color: var(--critical); }
+
+.rules-toolbar { display: flex; gap: var(--space-3); flex-wrap: wrap; align-items: center; margin-bottom: var(--space-4); }
+.rules-toolbar select, .rules-toolbar input { flex: 1; min-width: 180px; }
+.rule-count { font-size: 12.5px; color: var(--paper-muted); margin-bottom: var(--space-4); }

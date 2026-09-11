@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PARAKH — Login</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+  <div class="auth-shell">
+    <div class="auth-panel">
+      <div class="auth-grid">
+        <div class="auth-hero">
+          <div class="brand">
+            <div class="brand-mark">P</div>
+            <div class="brand-text">
+              <div class="name">PARAKH</div>
+              <div class="tag">Legal Metrology AI</div>
+            </div>
+          </div>
+
+          <div class="eyebrow">Inspector workspace</div>
+          <h1>Secure compliance review access</h1>
+          <p class="sub">Sign in with your inspector account to manage products, view inspection history, and verify compliance decisions.</p>
+          <ul>
+            <li>Product scanning and OCR</li>
+            <li>Rule-based validation</li>
+            <li>Inspection history and dashboard</li>
+          </ul>
+        </div>
+
+        <div class="auth-form-wrap">
+          <div class="auth-forms">
+            <form class="auth-form" id="login-form">
+              <h2>Login</h2>
+              <div class="field">
+                <label for="login-email">Email</label>
+                <input id="login-email" name="email" type="email" value="admin@parakh.local" required>
+              </div>
+              <div class="field">
+                <label for="login-password">Password</label>
+                <input id="login-password" name="password" type="password" value="admin123" required>
+              </div>
+              <button class="btn btn-primary" type="submit">Login</button>
+              <div id="login-status" class="auth-status" aria-live="polite"></div>
+            </form>
+
+            <form class="auth-form" id="register-form">
+              <h2>Create account</h2>
+              <div class="field">
+                <label for="register-name">Name</label>
+                <input id="register-name" name="name" type="text" placeholder="Inspector name">
+              </div>
+              <div class="field">
+                <label for="register-email">Email</label>
+                <input id="register-email" name="email" type="email" placeholder="inspector@domain.com" required>
+              </div>
+              <div class="field">
+                <label for="register-password">Password</label>
+                <input id="register-password" name="password" type="password" placeholder="Strong password" required>
+              </div>
+              <button class="btn btn-ghost" type="submit">Register</button>
+              <div id="register-status" class="auth-status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    const API = (() => {
+      try {
+        if (window.location && window.location.origin && window.location.origin !== 'null') {
+          return `${window.location.origin}/api`;
+        }
+      } catch {
+        // Fall through to localhost fallback below.
+      }
+      return 'http://localhost:3001/api';
+    })();
+    const authTokenKey = 'parakh-auth-token';
+
+    function setStatus(id, message, tone = '') {
+      const el = document.getElementById(id);
+      el.textContent = message;
+      el.className = `auth-status ${tone}`.trim();
+    }
+
+    async function postJson(path, body) {
+      const res = await fetch(`${API}${path}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      });
+
+      const payload = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        throw new Error(payload.error || 'Request failed');
+      }
+      return payload;
+    }
+
+    document.getElementById('login-form').addEventListener('submit', async (event) => {
+      event.preventDefault();
+      setStatus('login-status', 'Signing in…', '');
+      try {
+        const payload = await postJson('/auth/login', {
+          email: document.getElementById('login-email').value,
+          password: document.getElementById('login-password').value,
+        });
+
+        localStorage.setItem(authTokenKey, payload.user.token);
+        setStatus('login-status', 'Login successful. Redirecting…', 'success');
+        setTimeout(() => window.location.href = 'index.html', 600);
+      } catch (error) {
+        setStatus('login-status', error.message, 'error');
+      }
+    });
+
+    document.getElementById('register-form').addEventListener('submit', async (event) => {
+      event.preventDefault();
+      setStatus('register-status', 'Creating account…', '');
+      try {
+        await postJson('/auth/register', {
+          name: document.getElementById('register-name').value,
+          email: document.getElementById('register-email').value,
+          password: document.getElementById('register-password').value,
+          role: 'inspector'
+        });
+
+        setStatus('register-status', 'Account created. You can now log in.', 'success');
+        document.getElementById('register-form').reset();
+      } catch (error) {
+        setStatus('register-status', error.message, 'error');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PARAKH — Inspection Report</title>
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/report.css">
+</head>
+<body data-page="report">
+
+<div class="nav-overlay" data-nav-toggle-target></div>
+
+<div class="app-shell">
+  <aside class="sidenav">
+    <div class="brand">
+      <div class="brand-mark">P</div>
+      <div class="brand-text"><div class="name">PARAKH</div><div class="tag">Legal Metrology AI</div></div>
+      <button class="nav-close" type="button" data-nav-close aria-label="Close navigation">×</button>
+    </div>
+    <nav class="nav-group">
+      <div class="nav-label">Workspace</div>
+      <a class="nav-link" data-page="dashboard" href="index.html"><span class="dot"></span> Dashboard</a>
+      <a class="nav-link" data-page="scan" href="scan.html"><span class="dot"></span> Scan Product</a>
+      <a class="nav-link" data-page="rules" href="rules.html"><span class="dot"></span> Rule Library</a>
+    </nav>
+    <div class="sidenav-footer">Module 9 — Digital Evidence Repository</div>
+  </aside>
+
+  <div>
+    <div class="mobile-topbar">
+      <div class="brand"><div class="brand-mark">P</div><div class="brand-text"><div class="name">PARAKH</div></div></div>
+      <button data-nav-toggle aria-label="Open navigation">☰</button>
+    </div>
+
+    <main class="main" id="report-body">
+      <div class="report-head">
+        <div>
+          <div class="eyebrow">Inspection Report</div>
+          <h1 id="report-title" style="font-size:28px;">Loading…</h1>
+          <p class="sub" id="report-sub"></p>
+        </div>
+        <div class="report-actions">
+          <button class="btn btn-ghost" id="export-csv">Export CSV</button>
+          <button class="btn btn-primary" id="export-pdf">Export PDF</button>
+        </div>
+      </div>
+
+      <div class="report-meta-grid" id="report-meta"></div>
+
+      <div class="panel" style="margin-bottom: var(--space-5);">
+        <div class="section-title"><h2>Declared Label Information</h2></div>
+        <div class="table-wrap">
+          <table><tbody id="declared-fields"></tbody></table>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="section-title"><h2>Violations &amp; Recommended Actions</h2></div>
+        <div id="violation-list"></div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script type="module" src="js/app.js"></script>
+<script type="module" src="js/features/reports/reportGenerator.js"></script>
+</body>
+</html>

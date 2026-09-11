@@ -1,0 +1,1093 @@
+[
+  {
+    "id": "insp_mtvfjxp5_elffi1",
+    "createdAt": "2026-09-10T11:14:33.689Z",
+    "product": {
+      "name": "(unnamed product)",
+      "brand": "",
+      "category": "Uncategorised"
+    },
+    "inputs": {
+      "productCategory": "",
+      "fields": {
+        "productName": "",
+        "brand": "",
+        "manufacturerOrPacker": "",
+        "commonName": "",
+        "netQuantity": "",
+        "mrp": "",
+        "mfgDate": "",
+        "consumerCare": "",
+        "countryOfOrigin": "",
+        "isImported": false
+      },
+      "netQtyValue": "",
+      "netQtyUnit": "",
+      "grossWeightRaw": "",
+      "coefficients": {
+        "alcohol": "",
+        "sugar": "",
+        "ph": "",
+        "hardness": ""
+      },
+      "rawLabelText": "ey INGREDIENTS Ba) A Qa RA y PRODUCT OF INDIA reve NUTRITIONAL INFORMATION” PER1000 OK Ie ENERGY Hial BY TR op 7 PROTEIN 169 b & aod { | CARBOHYDRATES ETT Rk Ee in IS S»> TOTAL DIETARY FIBER | Sty | Nae TOTALFAT Rages SATURATED FAT SANE Ny TRANS FAT . SA CHOLESTEROL x) y wr un warens Pavan men REGD OFFICE U1 Sn ER Uh 5 Bntdapliceiec | 4 SISUSS — 1) _ 4 VAIDI (VAD) KALAWAD ROAD i. RAJKOT 360021 GUJARAT INDIA NET WEIGHT U2 SURVEY NO. 360 SANKAR ALA  i DSL WSL GT + pp LB A 16 wz BH 23055 SO BER ois a EE WL PKD. % 4061 WOORE 35% MADHYA PRADESH pe gd 30AU6 TR cn BORNE fon WA. fit pe TEH. SANDILA DIST HARDOL 24208 Ee 1/U2¢16V HUE S50 he BCT WT EEE2 54 % PERY btn ww | | stuneerR © RE | | PACKAGE [B. NO. iw ) § { | | at. BREN J UNITSALE PRICE pa on CNSNER “(pe \"temas (EOP BR Rp 2 5.00 in SE GE BEE (A HE of Blo 10 6 00R WORKING DAYS #25 A BA INAEERC tat UR E MA AT LEEP AWAY FROM DIRECT SUNLIGHT 6 EAT I 111! \\ ROS 18"
+    },
+    "allResults": [
+      {
+        "ruleId": "PC-MD-001",
+        "field": "Name & Address of Manufacturer/Packer/Importer",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(a)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Name & Address of Manufacturer/Packer/Importer is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Name & Address of Manufacturer/Packer/Importer."
+      },
+      {
+        "ruleId": "PC-MD-002",
+        "field": "Common / Generic Name of the Commodity",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(b)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Common / Generic Name of the Commodity is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Common / Generic Name of the Commodity."
+      },
+      {
+        "ruleId": "PC-MD-003",
+        "field": "Net Quantity (standard unit)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(c)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Net Quantity (standard unit) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Net Quantity (standard unit)."
+      },
+      {
+        "ruleId": "PC-MD-004",
+        "field": "Month & Year of Manufacture/Pack/Import",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(d)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Month & Year of Manufacture/Pack/Import is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Month & Year of Manufacture/Pack/Import."
+      },
+      {
+        "ruleId": "PC-MD-005",
+        "field": "Maximum Retail Price (inclusive of all taxes)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(e)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Maximum Retail Price (inclusive of all taxes) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Maximum Retail Price (inclusive of all taxes)."
+      },
+      {
+        "ruleId": "PC-MD-006",
+        "field": "Consumer Care / Customer Support Details",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(f)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Consumer Care / Customer Support Details is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Consumer Care / Customer Support Details."
+      }
+    ],
+    "violations": [
+      {
+        "ruleId": "PC-MD-001",
+        "field": "Name & Address of Manufacturer/Packer/Importer",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(a)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Name & Address of Manufacturer/Packer/Importer is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Name & Address of Manufacturer/Packer/Importer.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-003",
+        "field": "Net Quantity (standard unit)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(c)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Net Quantity (standard unit) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Net Quantity (standard unit).",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-005",
+        "field": "Maximum Retail Price (inclusive of all taxes)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(e)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Maximum Retail Price (inclusive of all taxes) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Maximum Retail Price (inclusive of all taxes).",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-002",
+        "field": "Common / Generic Name of the Commodity",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(b)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Common / Generic Name of the Commodity is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Common / Generic Name of the Commodity.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-004",
+        "field": "Month & Year of Manufacture/Pack/Import",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(d)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Month & Year of Manufacture/Pack/Import is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Month & Year of Manufacture/Pack/Import.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-006",
+        "field": "Consumer Care / Customer Support Details",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(f)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Consumer Care / Customer Support Details is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Consumer Care / Customer Support Details.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      }
+    ],
+    "score": 0,
+    "ocrUsed": true
+  },
+  {
+    "id": "insp_mtvf1r4t_8gacx1",
+    "createdAt": "2026-09-10T11:00:25.373Z",
+    "product": {
+      "name": "(unnamed product)",
+      "brand": "",
+      "category": "Uncategorised"
+    },
+    "inputs": {
+      "productCategory": "",
+      "fields": {
+        "productName": "",
+        "brand": "",
+        "manufacturerOrPacker": "",
+        "commonName": "",
+        "netQuantity": "",
+        "mrp": "",
+        "mfgDate": "",
+        "consumerCare": "",
+        "countryOfOrigin": "",
+        "isImported": false
+      },
+      "netQtyValue": "",
+      "netQtyUnit": "",
+      "grossWeightRaw": "",
+      "coefficients": {
+        "alcohol": "",
+        "sugar": "",
+        "ph": "",
+        "hardness": ""
+      },
+      "rawLabelText": "\\ a » wcwaraunne zsranreuea REGD. OFFICE U1 J SRVEYNG. 19 VAIDI (VAD) KALAWAD ROAD. TA LODHIKA DIST. RAIKOT 360021 GUJARAT * DIA. i» ES ) on 2) ik Yo ram MATE at Era en NRE oo HERE ROE TE) 15 re Gm CONSUMER” He “pe am BETWEEN 10 il ON ANY WORKING DAYS CONTACT 0M 10 6 00PM OR Fons dre een ATER OM J a ~Y"
+    },
+    "allResults": [
+      {
+        "ruleId": "LM-NS-022",
+        "field": "Label text",
+        "category": "Formatting",
+        "reference": "Third Schedule item 7(2)",
+        "severity": "Medium",
+        "status": "fail",
+        "message": "Unit symbol(s) not in required lower case: Gm.",
+        "evidence": "Gm",
+        "condition": "Unit symbols must be in lower case, except that the first letter is capitalised only when the unit is named after a person (e.g., N, Pa, Wb); everyday commodity units (g, kg, l, ml, m, cm) are always lower case."
+      },
+      {
+        "ruleId": "PC-MD-001",
+        "field": "Name & Address of Manufacturer/Packer/Importer",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(a)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Name & Address of Manufacturer/Packer/Importer is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Name & Address of Manufacturer/Packer/Importer."
+      },
+      {
+        "ruleId": "PC-MD-002",
+        "field": "Common / Generic Name of the Commodity",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(b)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Common / Generic Name of the Commodity is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Common / Generic Name of the Commodity."
+      },
+      {
+        "ruleId": "PC-MD-003",
+        "field": "Net Quantity (standard unit)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(c)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Net Quantity (standard unit) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Net Quantity (standard unit)."
+      },
+      {
+        "ruleId": "PC-MD-004",
+        "field": "Month & Year of Manufacture/Pack/Import",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(d)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Month & Year of Manufacture/Pack/Import is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Month & Year of Manufacture/Pack/Import."
+      },
+      {
+        "ruleId": "PC-MD-005",
+        "field": "Maximum Retail Price (inclusive of all taxes)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(e)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Maximum Retail Price (inclusive of all taxes) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Maximum Retail Price (inclusive of all taxes)."
+      },
+      {
+        "ruleId": "PC-MD-006",
+        "field": "Consumer Care / Customer Support Details",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(f)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Consumer Care / Customer Support Details is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Consumer Care / Customer Support Details."
+      }
+    ],
+    "violations": [
+      {
+        "ruleId": "PC-MD-001",
+        "field": "Name & Address of Manufacturer/Packer/Importer",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(a)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Name & Address of Manufacturer/Packer/Importer is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Name & Address of Manufacturer/Packer/Importer.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-003",
+        "field": "Net Quantity (standard unit)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(c)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Net Quantity (standard unit) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Net Quantity (standard unit).",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-005",
+        "field": "Maximum Retail Price (inclusive of all taxes)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(e)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Maximum Retail Price (inclusive of all taxes) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Maximum Retail Price (inclusive of all taxes).",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-002",
+        "field": "Common / Generic Name of the Commodity",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(b)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Common / Generic Name of the Commodity is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Common / Generic Name of the Commodity.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-004",
+        "field": "Month & Year of Manufacture/Pack/Import",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(d)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Month & Year of Manufacture/Pack/Import is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Month & Year of Manufacture/Pack/Import.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-006",
+        "field": "Consumer Care / Customer Support Details",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(f)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Consumer Care / Customer Support Details is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Consumer Care / Customer Support Details.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "LM-NS-022",
+        "field": "Label text",
+        "category": "Formatting",
+        "reference": "Third Schedule item 7(2)",
+        "severity": "Medium",
+        "status": "fail",
+        "message": "Unit symbol(s) not in required lower case: Gm.",
+        "evidence": "Gm",
+        "condition": "Unit symbols must be in lower case, except that the first letter is capitalised only when the unit is named after a person (e.g., N, Pa, Wb); everyday commodity units (g, kg, l, ml, m, cm) are always lower case.",
+        "recommendedAction": "Correct the numeric/unit formatting (case, decimal separator, prefix, digit grouping) per the Third Schedule."
+      }
+    ],
+    "score": 0,
+    "ocrUsed": true
+  },
+  {
+    "id": "insp_mtvepd3w_pcv4b6",
+    "createdAt": "2026-09-10T10:50:47.324Z",
+    "product": {
+      "name": "(unnamed product)",
+      "brand": "",
+      "category": "Uncategorised"
+    },
+    "inputs": {
+      "productCategory": "",
+      "fields": {
+        "productName": "",
+        "brand": "",
+        "manufacturerOrPacker": "",
+        "commonName": "",
+        "netQuantity": "",
+        "mrp": "",
+        "mfgDate": "",
+        "consumerCare": "",
+        "countryOfOrigin": "",
+        "isImported": false
+      },
+      "netQtyValue": "",
+      "netQtyUnit": "",
+      "grossWeightRaw": "",
+      "coefficients": {
+        "alcohol": "",
+        "sugar": "",
+        "ph": "",
+        "hardness": ""
+      },
+      "rawLabelText": "N/ “Na . “NV Ce prep \\ ) o Ba fa r Pe E \\WAF ER Siam y C r a 1% Fx ~ 7 \\ \\ ad 1 mB yr} J Par | PTE eo 2 —~ f J) > ¥ — EH J 2 nS ) Ne ) A A PP 3 ‘ olla he ZZ — —— iB grat he A | i J fgg 4 Wy oy ND Ng n \\ ry reg FE h _ \\ DEEPEN. ala a A A A a a 7% y ~ NY Ni Pa PE ALA ey INGREDIENTS Ba) A Qa RA y PRODUCT OF INDIA reve NUTRITIONAL INFORMATION” PER1000 OK Ie ENERGY Hial BY TR op 7 PROTEIN 169 b & aod { | CARBOHYDRATES ETT Rk Ee in IS S»> TOTAL DIETARY FIBER | Sty | Nae TOTALFAT Rages SATURATED FAT SANE Ny TRANS FAT . SA CHOLESTEROL x) y wr un warens Pavan men REGD OFFICE U1 Sn ER Uh 5 Bntdapliceiec | 4 SISUSS — 1) _ 4 VAIDI (VAD) KALAWAD ROAD i. RAJKOT 360021 GUJARAT INDIA NET WEIGHT U2 SURVEY NO. 360 SANKAR ALA  i DSL WSL GT + pp LB A 16 wz BH 23055 SO BER ois a EE WL PKD. % 4061 WOORE 35% MADHYA PRADESH pe gd 30AU6 TR cn BORNE fon WA. fit pe TEH. SANDILA DIST HARDOL 24208 Ee 1/U2¢16V HUE S50 he BCT WT EEE2 54 % PERY btn ww | | stuneerR © RE | | PACKAGE [B. NO. iw ) § { | | at. BREN J UNITSALE PRICE pa on CNSNER “(pe \"temas (EOP BR Rp 2 5.00 in SE GE BEE (A HE of Blo 10 6 00R WORKING DAYS #25 A BA INAEERC tat UR E MA AT LEEP AWAY FROM DIRECT SUNLIGHT 6 EAT I 111! \\ ROS 18"
+    },
+    "allResults": [
+      {
+        "ruleId": "PC-MD-001",
+        "field": "Name & Address of Manufacturer/Packer/Importer",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(a)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Name & Address of Manufacturer/Packer/Importer is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Name & Address of Manufacturer/Packer/Importer."
+      },
+      {
+        "ruleId": "PC-MD-002",
+        "field": "Common / Generic Name of the Commodity",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(b)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Common / Generic Name of the Commodity is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Common / Generic Name of the Commodity."
+      },
+      {
+        "ruleId": "PC-MD-003",
+        "field": "Net Quantity (standard unit)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(c)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Net Quantity (standard unit) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Net Quantity (standard unit)."
+      },
+      {
+        "ruleId": "PC-MD-004",
+        "field": "Month & Year of Manufacture/Pack/Import",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(d)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Month & Year of Manufacture/Pack/Import is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Month & Year of Manufacture/Pack/Import."
+      },
+      {
+        "ruleId": "PC-MD-005",
+        "field": "Maximum Retail Price (inclusive of all taxes)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(e)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Maximum Retail Price (inclusive of all taxes) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Maximum Retail Price (inclusive of all taxes)."
+      },
+      {
+        "ruleId": "PC-MD-006",
+        "field": "Consumer Care / Customer Support Details",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(f)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Consumer Care / Customer Support Details is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Consumer Care / Customer Support Details."
+      }
+    ],
+    "violations": [
+      {
+        "ruleId": "PC-MD-001",
+        "field": "Name & Address of Manufacturer/Packer/Importer",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(a)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Name & Address of Manufacturer/Packer/Importer is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Name & Address of Manufacturer/Packer/Importer.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-003",
+        "field": "Net Quantity (standard unit)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(c)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Net Quantity (standard unit) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Net Quantity (standard unit).",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-005",
+        "field": "Maximum Retail Price (inclusive of all taxes)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(e)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Maximum Retail Price (inclusive of all taxes) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Maximum Retail Price (inclusive of all taxes).",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-002",
+        "field": "Common / Generic Name of the Commodity",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(b)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Common / Generic Name of the Commodity is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Common / Generic Name of the Commodity.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-004",
+        "field": "Month & Year of Manufacture/Pack/Import",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(d)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Month & Year of Manufacture/Pack/Import is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Month & Year of Manufacture/Pack/Import.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-006",
+        "field": "Consumer Care / Customer Support Details",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(f)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Consumer Care / Customer Support Details is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Consumer Care / Customer Support Details.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      }
+    ],
+    "score": 0,
+    "ocrUsed": true
+  },
+  {
+    "id": "insp_mtvenilq_paoiyo",
+    "createdAt": "2026-09-10T10:49:21.134Z",
+    "product": {
+      "name": "(unnamed product)",
+      "brand": "",
+      "category": "Uncategorised"
+    },
+    "inputs": {
+      "productCategory": "",
+      "fields": {
+        "productName": "",
+        "brand": "",
+        "manufacturerOrPacker": "",
+        "commonName": "",
+        "netQuantity": "",
+        "mrp": "",
+        "mfgDate": "",
+        "consumerCare": "",
+        "countryOfOrigin": "",
+        "isImported": false
+      },
+      "netQtyValue": "",
+      "netQtyUnit": "",
+      "grossWeightRaw": "",
+      "coefficients": {
+        "alcohol": "",
+        "sugar": "",
+        "ph": "",
+        "hardness": ""
+      },
+      "rawLabelText": "| re [0 \\§ 8 BALAJI WAFERS Da ON wa Der Ym) WA TAN So AAP | 1) E= So _— = IESE . = SENN Ee. . on ~] INGREDIENTS | POUIO (55%) EUBLE VEGETABLE OL (PALMOLEN) EDIBLE ~ (OMMON SALT SPICES & (ONDIMENTS ou [Ty (HILL (BALAJD I Sot Ss Vr | penile INDIAN SNACKS § SAVOURIES TRY os on Cie a 1 EE TE — THIS RUMBLES *ntsioss ET — Mian = OSs [29 | % 8 ll E==iEEE A EE £24 \\ Try Erm aa ETT] [oom | 5% EAR AEA oa i ALOE SRR FSH ALIN DSA 2 i MANUFACTURED BY BALI WAFERS PRIVITE LIMITED . ‘SERVING PER PACKAGE\". 1 ‘SERVING SEE OFFICE SURVEY NO.19 VALI (AD) KALAWAD ROAD TA. LODHIKA DIST. RAVKOT 360021 GUIARAT INDIA. y fat LCENE NO. IDR. U2 SREY ND 36 HANGS NET WEIGHT AV NA. NO. 8 NEAR DUNGAR! VILLAGE TA. DST. VALSAD 336375 GET NIA.faf LESENT O20] USAIN 234 MRPZ i\" FL Mt it tt Nd (NCL OF ALL TAXES) LIENS ND 1001626000857. FOR MANUFACTURING UNIT ADBRESS & UNITSALE PRICE af CEE SES THATS FEAT. jn) 2 ous QCM RQUTTY BNO INTHE PACKET PLEASE INFORM US WE WILL REPLACE IT FOR FEDBACK CONPLANT DURES PLES YRITE TOUS QH OR PKD. sess once oss oe cu 0 (ONSUMER CARE ] fie Bm EMAL USAT ONACTGBALATAARERS COM ERI | Ee HITTIN J cio 000 [eo] ) 81906010\"500535 a 5 f A ONY) . 4 rr —— b= —"
+    },
+    "allResults": [
+      {
+        "ruleId": "PC-MD-001",
+        "field": "Name & Address of Manufacturer/Packer/Importer",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(a)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Name & Address of Manufacturer/Packer/Importer is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Name & Address of Manufacturer/Packer/Importer."
+      },
+      {
+        "ruleId": "PC-MD-002",
+        "field": "Common / Generic Name of the Commodity",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(b)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Common / Generic Name of the Commodity is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Common / Generic Name of the Commodity."
+      },
+      {
+        "ruleId": "PC-MD-003",
+        "field": "Net Quantity (standard unit)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(c)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Net Quantity (standard unit) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Net Quantity (standard unit)."
+      },
+      {
+        "ruleId": "PC-MD-004",
+        "field": "Month & Year of Manufacture/Pack/Import",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(d)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Month & Year of Manufacture/Pack/Import is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Month & Year of Manufacture/Pack/Import."
+      },
+      {
+        "ruleId": "PC-MD-005",
+        "field": "Maximum Retail Price (inclusive of all taxes)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(e)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Maximum Retail Price (inclusive of all taxes) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Maximum Retail Price (inclusive of all taxes)."
+      },
+      {
+        "ruleId": "PC-MD-006",
+        "field": "Consumer Care / Customer Support Details",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(f)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Consumer Care / Customer Support Details is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Consumer Care / Customer Support Details."
+      }
+    ],
+    "violations": [
+      {
+        "ruleId": "PC-MD-001",
+        "field": "Name & Address of Manufacturer/Packer/Importer",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(a)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Name & Address of Manufacturer/Packer/Importer is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Name & Address of Manufacturer/Packer/Importer.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-003",
+        "field": "Net Quantity (standard unit)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(c)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Net Quantity (standard unit) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Net Quantity (standard unit).",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-005",
+        "field": "Maximum Retail Price (inclusive of all taxes)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(e)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Maximum Retail Price (inclusive of all taxes) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Maximum Retail Price (inclusive of all taxes).",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-002",
+        "field": "Common / Generic Name of the Commodity",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(b)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Common / Generic Name of the Commodity is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Common / Generic Name of the Commodity.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-004",
+        "field": "Month & Year of Manufacture/Pack/Import",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(d)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Month & Year of Manufacture/Pack/Import is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Month & Year of Manufacture/Pack/Import.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-006",
+        "field": "Consumer Care / Customer Support Details",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(f)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Consumer Care / Customer Support Details is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Consumer Care / Customer Support Details.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      }
+    ],
+    "score": 0,
+    "ocrUsed": true
+  },
+  {
+    "id": "insp_mtveleb9_1i3yan",
+    "createdAt": "2026-09-10T10:47:42.261Z",
+    "product": {
+      "name": "(unnamed product)",
+      "brand": "",
+      "category": "Uncategorised"
+    },
+    "inputs": {
+      "productCategory": "",
+      "fields": {
+        "productName": "",
+        "brand": "",
+        "manufacturerOrPacker": "",
+        "commonName": "",
+        "netQuantity": "",
+        "mrp": "",
+        "mfgDate": "",
+        "consumerCare": "",
+        "countryOfOrigin": "",
+        "isImported": false
+      },
+      "netQtyValue": "",
+      "netQtyUnit": "",
+      "grossWeightRaw": "",
+      "coefficients": {
+        "alcohol": "",
+        "sugar": "",
+        "ph": "",
+        "hardness": ""
+      },
+      "rawLabelText": "| re [0 \\§ 8 BALAJI WAFERS Da ON wa Der Ym) WA TAN So AAP | 1) E= So _— = IESE . = SENN Ee. . on ~] INGREDIENTS | POUIO (55%) EUBLE VEGETABLE OL (PALMOLEN) EDIBLE ~ (OMMON SALT SPICES & (ONDIMENTS ou [Ty (HILL (BALAJD I Sot Ss Vr | penile INDIAN SNACKS § SAVOURIES TRY os on Cie a 1 EE TE — THIS RUMBLES *ntsioss ET — Mian = OSs [29 | % 8 ll E==iEEE A EE £24 \\ Try Erm aa ETT] [oom | 5% EAR AEA oa i ALOE SRR FSH ALIN DSA 2 i MANUFACTURED BY BALI WAFERS PRIVITE LIMITED . ‘SERVING PER PACKAGE\". 1 ‘SERVING SEE OFFICE SURVEY NO.19 VALI (AD) KALAWAD ROAD TA. LODHIKA DIST. RAVKOT 360021 GUIARAT INDIA. y fat LCENE NO. IDR. U2 SREY ND 36 HANGS NET WEIGHT AV NA. NO. 8 NEAR DUNGAR! VILLAGE TA. DST. VALSAD 336375 GET NIA.faf LESENT O20] USAIN 234 MRPZ i\" FL Mt it tt Nd (NCL OF ALL TAXES) LIENS ND 1001626000857. FOR MANUFACTURING UNIT ADBRESS & UNITSALE PRICE af CEE SES THATS FEAT. jn) 2 ous QCM RQUTTY BNO INTHE PACKET PLEASE INFORM US WE WILL REPLACE IT FOR FEDBACK CONPLANT DURES PLES YRITE TOUS QH OR PKD. sess once oss oe cu 0 (ONSUMER CARE ] fie Bm EMAL USAT ONACTGBALATAARERS COM ERI | Ee HITTIN J cio 000 [eo] ) 81906010\"500535 a 5 f A ONY) . 4 rr —— b= —"
+    },
+    "allResults": [
+      {
+        "ruleId": "PC-MD-001",
+        "field": "Name & Address of Manufacturer/Packer/Importer",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(a)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Name & Address of Manufacturer/Packer/Importer is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Name & Address of Manufacturer/Packer/Importer."
+      },
+      {
+        "ruleId": "PC-MD-002",
+        "field": "Common / Generic Name of the Commodity",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(b)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Common / Generic Name of the Commodity is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Common / Generic Name of the Commodity."
+      },
+      {
+        "ruleId": "PC-MD-003",
+        "field": "Net Quantity (standard unit)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(c)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Net Quantity (standard unit) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Net Quantity (standard unit)."
+      },
+      {
+        "ruleId": "PC-MD-004",
+        "field": "Month & Year of Manufacture/Pack/Import",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(d)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Month & Year of Manufacture/Pack/Import is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Month & Year of Manufacture/Pack/Import."
+      },
+      {
+        "ruleId": "PC-MD-005",
+        "field": "Maximum Retail Price (inclusive of all taxes)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(e)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Maximum Retail Price (inclusive of all taxes) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Maximum Retail Price (inclusive of all taxes)."
+      },
+      {
+        "ruleId": "PC-MD-006",
+        "field": "Consumer Care / Customer Support Details",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(f)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Consumer Care / Customer Support Details is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Consumer Care / Customer Support Details."
+      }
+    ],
+    "violations": [
+      {
+        "ruleId": "PC-MD-001",
+        "field": "Name & Address of Manufacturer/Packer/Importer",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(a)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Name & Address of Manufacturer/Packer/Importer is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Name & Address of Manufacturer/Packer/Importer.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-003",
+        "field": "Net Quantity (standard unit)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(c)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Net Quantity (standard unit) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Net Quantity (standard unit).",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-005",
+        "field": "Maximum Retail Price (inclusive of all taxes)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(e)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Maximum Retail Price (inclusive of all taxes) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Maximum Retail Price (inclusive of all taxes).",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-002",
+        "field": "Common / Generic Name of the Commodity",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(b)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Common / Generic Name of the Commodity is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Common / Generic Name of the Commodity.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-004",
+        "field": "Month & Year of Manufacture/Pack/Import",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(d)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Month & Year of Manufacture/Pack/Import is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Month & Year of Manufacture/Pack/Import.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-006",
+        "field": "Consumer Care / Customer Support Details",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(f)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Consumer Care / Customer Support Details is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Consumer Care / Customer Support Details.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      }
+    ],
+    "score": 0,
+    "ocrUsed": true
+  },
+  {
+    "id": "insp_mtvel2jh_pec80p",
+    "createdAt": "2026-09-10T10:47:27.005Z",
+    "product": {
+      "name": "(unnamed product)",
+      "brand": "",
+      "category": "Uncategorised"
+    },
+    "inputs": {
+      "productCategory": "",
+      "fields": {
+        "productName": "",
+        "brand": "",
+        "manufacturerOrPacker": "",
+        "commonName": "",
+        "netQuantity": "",
+        "mrp": "",
+        "mfgDate": "",
+        "consumerCare": "",
+        "countryOfOrigin": "",
+        "isImported": false
+      },
+      "netQtyValue": "",
+      "netQtyUnit": "",
+      "grossWeightRaw": "",
+      "coefficients": {
+        "alcohol": "",
+        "sugar": "",
+        "ph": "",
+        "hardness": ""
+      },
+      "rawLabelText": "| re [0 \\§ 8 BALAJI WAFERS Da ON wa Der Ym) WA TAN So AAP | 1) E= So _— = IESE . = SENN Ee. . on ~] INGREDIENTS | POUIO (55%) EUBLE VEGETABLE OL (PALMOLEN) EDIBLE ~ (OMMON SALT SPICES & (ONDIMENTS ou [Ty (HILL (BALAJD I Sot Ss Vr | penile INDIAN SNACKS § SAVOURIES TRY os on Cie a 1 EE TE — THIS RUMBLES *ntsioss ET — Mian = OSs [29 | % 8 ll E==iEEE A EE £24 \\ Try Erm aa ETT] [oom | 5% EAR AEA oa i ALOE SRR FSH ALIN DSA 2 i MANUFACTURED BY BALI WAFERS PRIVITE LIMITED . ‘SERVING PER PACKAGE\". 1 ‘SERVING SEE OFFICE SURVEY NO.19 VALI (AD) KALAWAD ROAD TA. LODHIKA DIST. RAVKOT 360021 GUIARAT INDIA. y fat LCENE NO. IDR. U2 SREY ND 36 HANGS NET WEIGHT AV NA. NO. 8 NEAR DUNGAR! VILLAGE TA. DST. VALSAD 336375 GET NIA.faf LESENT O20] USAIN 234 MRPZ i\" FL Mt it tt Nd (NCL OF ALL TAXES) LIENS ND 1001626000857. FOR MANUFACTURING UNIT ADBRESS & UNITSALE PRICE af CEE SES THATS FEAT. jn) 2 ous QCM RQUTTY BNO INTHE PACKET PLEASE INFORM US WE WILL REPLACE IT FOR FEDBACK CONPLANT DURES PLES YRITE TOUS QH OR PKD. sess once oss oe cu 0 (ONSUMER CARE ] fie Bm EMAL USAT ONACTGBALATAARERS COM ERI | Ee HITTIN J cio 000 [eo] ) 81906010\"500535 a 5 f A ONY) . 4 rr —— b= —"
+    },
+    "allResults": [
+      {
+        "ruleId": "PC-MD-001",
+        "field": "Name & Address of Manufacturer/Packer/Importer",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(a)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Name & Address of Manufacturer/Packer/Importer is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Name & Address of Manufacturer/Packer/Importer."
+      },
+      {
+        "ruleId": "PC-MD-002",
+        "field": "Common / Generic Name of the Commodity",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(b)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Common / Generic Name of the Commodity is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Common / Generic Name of the Commodity."
+      },
+      {
+        "ruleId": "PC-MD-003",
+        "field": "Net Quantity (standard unit)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(c)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Net Quantity (standard unit) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Net Quantity (standard unit)."
+      },
+      {
+        "ruleId": "PC-MD-004",
+        "field": "Month & Year of Manufacture/Pack/Import",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(d)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Month & Year of Manufacture/Pack/Import is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Month & Year of Manufacture/Pack/Import."
+      },
+      {
+        "ruleId": "PC-MD-005",
+        "field": "Maximum Retail Price (inclusive of all taxes)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(e)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Maximum Retail Price (inclusive of all taxes) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Maximum Retail Price (inclusive of all taxes)."
+      },
+      {
+        "ruleId": "PC-MD-006",
+        "field": "Consumer Care / Customer Support Details",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(f)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Consumer Care / Customer Support Details is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Consumer Care / Customer Support Details."
+      }
+    ],
+    "violations": [
+      {
+        "ruleId": "PC-MD-001",
+        "field": "Name & Address of Manufacturer/Packer/Importer",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(a)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Name & Address of Manufacturer/Packer/Importer is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Name & Address of Manufacturer/Packer/Importer.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-003",
+        "field": "Net Quantity (standard unit)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(c)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Net Quantity (standard unit) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Net Quantity (standard unit).",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-005",
+        "field": "Maximum Retail Price (inclusive of all taxes)",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(e)",
+        "severity": "Critical",
+        "status": "fail",
+        "message": "Maximum Retail Price (inclusive of all taxes) is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Maximum Retail Price (inclusive of all taxes).",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-002",
+        "field": "Common / Generic Name of the Commodity",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(b)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Common / Generic Name of the Commodity is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Common / Generic Name of the Commodity.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-004",
+        "field": "Month & Year of Manufacture/Pack/Import",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(d)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Month & Year of Manufacture/Pack/Import is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Month & Year of Manufacture/Pack/Import.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      },
+      {
+        "ruleId": "PC-MD-006",
+        "field": "Consumer Care / Customer Support Details",
+        "category": "Mandatory Declaration",
+        "reference": "PC Rules 2011, Rule 6(1)(f)",
+        "severity": "High",
+        "status": "fail",
+        "message": "Consumer Care / Customer Support Details is missing from the label.",
+        "evidence": null,
+        "condition": "Every applicable package must declare: Consumer Care / Customer Support Details.",
+        "recommendedAction": "Reprint/relabel the package to include the missing declaration before further sale or distribution."
+      }
+    ],
+    "score": 0,
+    "ocrUsed": true
+  }
+]

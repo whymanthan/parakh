@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PARAKH — Scan Product</title>
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/scan.css">
+</head>
+<body data-page="scan">
+
+<div class="nav-overlay" data-nav-toggle-target></div>
+
+<div class="app-shell">
+  <aside class="sidenav">
+    <div class="brand">
+      <div class="brand-mark">P</div>
+      <div class="brand-text"><div class="name">PARAKH</div><div class="tag">Legal Metrology AI</div></div>
+      <button class="nav-close" type="button" data-nav-close aria-label="Close navigation">×</button>
+    </div>
+    <nav class="nav-group">
+      <div class="nav-label">Workspace</div>
+      <a class="nav-link" data-page="dashboard" href="index.html"><span class="dot"></span> Dashboard</a>
+      <a class="nav-link" data-page="scan" href="scan.html"><span class="dot"></span> Scan Product</a>
+      <a class="nav-link" data-page="rules" href="rules.html"><span class="dot"></span> Rule Library</a>
+    </nav>
+    <div class="sidenav-footer">Module 1–4 pipeline: capture → OCR → structured fields → rule engine.</div>
+  </aside>
+
+  <div>
+    <div class="mobile-topbar">
+      <div class="brand"><div class="brand-mark">P</div><div class="brand-text"><div class="name">PARAKH</div></div></div>
+      <button data-nav-toggle aria-label="Open navigation">☰</button>
+    </div>
+
+    <main class="main">
+      <div class="page-header">
+        <div>
+          <div class="eyebrow">Modules 1–4 — Scan &amp; Validate</div>
+          <h1>New Product Inspection</h1>
+          <p class="sub">Upload label photos for in-browser OCR, confirm the declared fields, then run them through the National Standards rule engine and mandatory-declaration checklist.</p>
+        </div>
+      </div>
+
+      <div class="scan-layout">
+        <!-- LEFT: capture + OCR -->
+        <div class="panel">
+          <div class="section-title"><h2>1. Capture Label</h2></div>
+          <div class="capture-options" style="display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: var(--space-3); margin-bottom: var(--space-4);">
+            <button type="button" class="btn btn-ghost btn-block" id="camera-upload">Use Camera</button>
+            <button type="button" class="btn btn-ghost btn-block" id="media-upload">Choose from Media</button>
+          </div>
+
+          <div class="dropzone" id="dropzone">
+            <div class="icon">📷</div>
+            <div class="title">Drop label images here or click to upload</div>
+            <div class="sub">Front / back / side panel photos — JPG or PNG</div>
+          </div>
+          <input type="file" id="camera-input" accept="image/*" capture="environment" multiple hidden>
+          <input type="file" id="media-input" accept="image/*,.webp" multiple hidden>
+          <div class="preview-strip" id="preview-strip"></div>
+
+          <div class="ocr-box">
+            <button class="btn btn-ghost btn-block" id="run-ocr" disabled>Run OCR on uploaded images</button>
+            <div class="ocr-status" id="ocr-status"></div>
+            <div class="progress-bar" id="ocr-progress" style="display:none;"><div class="progress-fill" id="ocr-progress-fill" style="width:0%"></div></div>
+          </div>
+
+          <div class="field" style="margin-top: var(--space-4);">
+            <label>Raw label text (OCR output — edit or paste manually)</label>
+            <textarea id="raw-label-text" placeholder="e.g. Net Quantity: 500 g&#10;MRP: Rs. 120 (incl. of all taxes)&#10;Mfd by ABC Foods Pvt. Ltd."></textarea>
+            <div class="field-actions" style="margin-top: var(--space-2);">
+              <button type="button" class="btn btn-ghost" id="auto-fill-fields">Auto-fill declared fields</button>
+            </div>
+            <div class="hint">The rule engine scans this text directly for formatting violations (unit case, decimal commas, "kmph", stacked prefixes, etc.), independent of the structured fields.</div>
+          </div>
+
+          <div class="field" style="margin-top: var(--space-5);">
+            <label>E-commerce product link</label>
+            <input id="product-url" type="url" placeholder="https://www.amazon.in/… or https://www.flipkart.com/…">
+            <div class="field-actions" style="margin-top: var(--space-2);">
+              <button type="button" class="btn btn-ghost" id="fetch-product-link">Fetch product details</button>
+            </div>
+            <div class="hint">Fetches the product page text, extracts likely declaration details, and checks whether the seller has published the required legal metrology information.</div>
+            <div class="ocr-status" id="product-link-status"></div>
+          </div>
+        </div>
+
+        <!-- RIGHT: structured fields -->
+        <div class="panel">
+          <div class="section-title"><h2>2. Confirm Declared Fields</h2></div>
+
+          <fieldset>
+            <legend>Product</legend>
+            <div class="field-row">
+              <div class="field"><label>Product Name</label><input id="f-productName" placeholder="ABC Premium Tea"></div>
+              <div class="field"><label>Brand</label><input id="f-brand" placeholder="ABC"></div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label>Product Category</label>
+                <select id="f-category">
+                  <option value="">Select category…</option>
+                  <option>Food</option>
+                  <option>Beverage</option>
+                  <option>Precious Stones / Jewellery</option>
+                  <option>Farm Produce / Food Grain</option>
+                  <option>Garments</option>
+                  <option>Medical Device</option>
+                  <option>Cosmetics</option>
+                  <option>Electronics</option>
+                  <option>General Consumer Good</option>
+                </select>
+              </div>
+              <div class="field"><label>Common / Generic Name</label><input id="f-commonName" placeholder="Tea"></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Mandatory Declarations</legend>
+            <div class="field"><label>Manufacturer / Packer / Importer (name &amp; address)</label><input id="f-manufacturer" placeholder="ABC Foods Pvt. Ltd., Mumbai"></div>
+            <div class="field-row">
+              <div class="field-inline">
+                <div class="field"><label>Net Quantity — value</label><input id="f-netQtyValue" placeholder="500"></div>
+                <div class="field"><label>Unit</label><input id="f-netQtyUnit" placeholder="g"></div>
+              </div>
+              <div class="field"><label>MRP (₹)</label><input id="f-mrp" placeholder="120"></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label>Mfg / Pack / Import Date</label><input id="f-mfgDate" type="month"></div>
+              <div class="field"><label>Consumer Care Details</label><input id="f-consumerCare" placeholder="care@abcfoods.com / 1800-XXX-XXXX"></div>
+            </div>
+            <div class="field-row">
+              <div class="field checkbox-row" style="padding-top: 22px;">
+                <input type="checkbox" id="f-imported" style="width:16px;height:16px;">
+                <label for="f-imported" style="font-weight:400;">This is an imported product</label>
+              </div>
+              <div class="field"><label>Country of Origin</label><input id="f-origin" placeholder="e.g. Vietnam"></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Optional — Other Declared Quantities</legend>
+            <div class="field"><label>Gross Weight (free text — parsed automatically)</label><input id="f-grossWeight" placeholder="e.g. 1.1 lb or 550 g"></div>
+            <div class="field-row">
+              <div class="field"><label>Alcoholic Strength</label><input id="f-alcohol" placeholder="e.g. 42.8% Vol"></div>
+              <div class="field"><label>Sugar Content</label><input id="f-sugar" placeholder="e.g. 12°Bx"></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label>pH Value</label><input id="f-ph" placeholder="e.g. pH 6.5"></div>
+              <div class="field"><label>Material Hardness</label><input id="f-hardness" placeholder="e.g. HRC 45"></div>
+            </div>
+          </fieldset>
+
+          <div style="display:flex; gap: var(--space-3);">
+            <button class="btn btn-primary btn-block" id="run-check">Run Compliance Check</button>
+            <button class="btn btn-ghost" id="reset-form">Reset</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESULTS -->
+      <div class="panel" id="results-panel" style="display:none; margin-top: var(--space-6);">
+        <div class="page-header" style="margin-bottom: var(--space-5);">
+          <div>
+            <div class="eyebrow">Modules 7 &amp; 8 — Score &amp; Violations</div>
+            <h1 style="font-size:24px;">Inspection Result</h1>
+          </div>
+          <a class="btn btn-ghost" id="view-report-link" href="#">Open Full Report →</a>
+        </div>
+
+        <div class="result-summary">
+          <div id="score-ring-wrap"></div>
+          <div class="grid grid-4" id="result-counts" style="flex:1;"></div>
+        </div>
+
+        <div class="section-title"><h2>Violations Detected</h2></div>
+        <div id="violation-list"></div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/5.0.4/tesseract.min.js"></script>
+<script type="module" src="js/app.js"></script>
+<script type="module" src="js/features/scan/scan.js"></script>
+</body>
+</html>

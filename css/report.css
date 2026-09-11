@@ -1,0 +1,19 @@
+.report-head {
+  display: flex; justify-content: space-between; align-items: flex-start; gap: var(--space-5);
+  flex-wrap: wrap; margin-bottom: var(--space-6);
+}
+.report-meta-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-4); margin-bottom: var(--space-6); }
+@media (max-width: 800px) { .report-meta-grid { grid-template-columns: 1fr 1fr; } }
+.report-meta-grid .k { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--paper-muted); margin-bottom: 3px; }
+.report-meta-grid .v { font-size: 14px; font-weight: 600; }
+
+.report-actions { display: flex; gap: var(--space-3); }
+
+@media print {
+  .sidenav, .mobile-topbar, .report-actions, .nav-overlay { display: none !important; }
+  .app-shell { display: block; }
+  body { background: #fff; color: #111; }
+  .panel, .violation-card, .stat-card { border-color: #ccc; background: #fff; box-shadow: none; }
+  .main { max-width: 100%; padding: 0; }
+  p, .vmsg, .vmeta { color: #333; }
+}

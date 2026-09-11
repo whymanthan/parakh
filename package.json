@@ -1,0 +1,22 @@
+{
+  "name": "parakh",
+  "version": "1.0.0",
+  "description": "A working, feature-structured build of PARAKH: a rule engine that validates product label declarations against a real Legal Metrology rules database, plus a full inspector UI (scan → OCR → structured entry → violations → scored report → dashboard). Everything runs client-side — open `index.html` and it works, no server or build step required.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "node-fetch": "^3.3.2"
+  }
+}

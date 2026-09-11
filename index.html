@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PARAKH — Compliance Dashboard</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230a1024%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 text-anchor=%22middle%22 fill=%22%23e8a13d%22 font-family=%22sans-serif%22 font-weight=%22700%22>P</text></svg>">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body data-page="dashboard">
+
+<div class="nav-overlay" data-nav-toggle-target></div>
+
+<div class="app-shell">
+  <aside class="sidenav">
+    <div class="brand">
+      <div class="brand-mark">P</div>
+      <div class="brand-text">
+        <div class="name">PARAKH</div>
+        <div class="tag">Legal Metrology AI</div>
+      </div>
+    </div>
+
+    <nav class="nav-group">
+      <div class="nav-label">Workspace</div>
+      <a class="nav-link" data-page="dashboard" href="index.html"><span class="dot"></span> Dashboard</a>
+      <a class="nav-link" data-page="scan" href="scan.html"><span class="dot"></span> Scan Product</a>
+      <a class="nav-link" data-page="rules" href="rules.html"><span class="dot"></span> Rule Library</a>
+    </nav>
+
+    <div class="sidenav-footer">
+      Legal Metrology Act, 2009 &amp; PC Rules, 2011<br>
+      38 National Standards rules loaded
+    </div>
+  </aside>
+
+  <div>
+    <div class="mobile-topbar">
+      <div class="brand"><div class="brand-mark">P</div><div class="brand-text"><div class="name">PARAKH</div></div></div>
+      <button data-nav-toggle aria-label="Open navigation">☰</button>
+    </div>
+
+    <main class="main">
+      <div class="page-header">
+        <div>
+          <div class="eyebrow">Module 10 — Compliance Dashboard</div>
+          <h1>National Compliance Overview</h1>
+          <p class="sub">Live view of every inspection run through PARAKH on this device: violation trends, top offending brands/categories, and case history.</p>
+        </div>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:center;">
+          <button class="btn btn-ghost" id="reset-data">Clear history</button>
+          <a class="btn btn-primary" href="scan.html">+ New Inspection</a>
+          <a class="btn btn-primary" href="android/ParakhMobile/app/build/outputs/apk/debug/app-debug.apk" download="parakh-android.apk">Download APK</a>
+        </div>
+      </div>
+
+      <div id="stat-cards" class="grid grid-4" style="margin-bottom: var(--space-6);"></div>
+
+      <div class="dash-hero">
+        <div class="panel">
+          <div class="section-title"><h2>Top Violating Brands</h2></div>
+          <div id="brand-chart" class="bar-chart"></div>
+        </div>
+        <div class="panel">
+          <div class="section-title"><h2>Violations by Severity</h2></div>
+          <div id="severity-legend" class="sev-legend"></div>
+          <div class="divider"></div>
+          <div class="section-title"><h2 style="font-size:15px;">Top Violating Categories</h2></div>
+          <div id="category-chart" class="bar-chart"></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="section-title"><h2>Recent Inspections</h2></div>
+        <div id="recent-list"></div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script type="module" src="js/app.js"></script>
+<script type="module" src="js/features/dashboard/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+:root {
+  --auth-card: rgba(17, 24, 39, 0.9);
+  --auth-border: rgba(148, 163, 184, 0.18);
+}
+
+.auth-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+}
+
+.auth-panel {
+  width: min(960px, 100%);
+  background: var(--auth-card);
+  border: 1px solid var(--auth-border);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.34);
+}
+
+.auth-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+}
+
+.auth-hero {
+  padding: 42px 32px;
+  background: linear-gradient(135deg, rgba(35, 78, 168, 0.25), rgba(10, 16, 36, 0.9));
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-hero .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.auth-hero .brand-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #f7b75d, #d77f1c);
+  color: #0a1024;
+  font-weight: 800;
+}
+
+.auth-form-wrap {
+  padding: 28px;
+}
+
+.auth-forms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--auth-border);
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.auth-form h2 {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+}
+
+.auth-form .field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-form input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: rgba(15, 23, 42, 0.7);
+  color: var(--paper-100);
+  padding: 10px 12px;
+}
+
+.auth-status {
+  min-height: 24px;
+  font-size: 0.92rem;
+}
+
+.auth-status.success {
+  color: var(--signal-teal);
+}
+
+.auth-status.error {
+  color: var(--critical);
+}
+
+@media (max-width: 760px) {
+  .auth-grid,
+  .auth-forms {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-form-wrap,
+  .auth-hero {
+    padding: 24px 18px;
+  }
+}
