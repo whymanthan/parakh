@@ -65,7 +65,7 @@ async function renderRecent() {
   el.innerHTML = inspections.slice(0, 8).map((r) => {
     const band = scoreBand(r.score);
     return `
-      <a class="recent-row" href="report.html?id=${encodeURIComponent(r.id)}" style="text-decoration:none;color:inherit">
+      <a class="recent-row" href="/report?id=${encodeURIComponent(r.id)}" style="text-decoration:none;color:inherit">
         <span class="mono" style="color:var(--paper-muted)">${formatDateTime(r.createdAt)}</span>
         <span><strong>${escapeHtml(r.product.name || 'Unnamed product')}</strong></span>
         <span style="color:var(--paper-muted)">${escapeHtml(r.product.brand || '—')}</span>

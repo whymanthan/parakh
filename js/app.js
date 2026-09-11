@@ -6,13 +6,14 @@
  */
 
 export function ensureSession() {
-  if (location.pathname.endsWith('/login.html') || location.pathname.endsWith('login.html')) {
+  const isAuthPage = location.pathname === '/' || location.pathname === '/login';
+  if (isAuthPage) {
     return;
   }
 
   const token = localStorage.getItem('parakh-auth-token');
   if (!token) {
-    window.location.href = 'login.html';
+    window.location.href = '/login';
   }
 }
 

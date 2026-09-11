@@ -91,7 +91,7 @@ export async function initReport() {
   const id = getIdFromUrl();
   const record = id ? await getInspectionById(id) : null;
   if (!record) {
-    document.getElementById('report-body').innerHTML = `<div class="empty-state">Report not found. It may have been cleared from local history. <a href="index.html">← Back to dashboard</a></div>`;
+    document.getElementById('report-body').innerHTML = `<div class="empty-state">Report not found. It may have been cleared from local history. <a href="/dashboard">← Back to dashboard</a></div>`;
     return;
   }
   render(record);

@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/", "dest": "/login.html" },
+    { "src": "/login", "dest": "/login.html" },
+    { "src": "/dashboard", "dest": "/index.html" },
+    { "src": "/scan", "dest": "/scan.html" },
+    { "src": "/rules", "dest": "/rules.html" },
+    { "src": "/report", "dest": "/report.html" },
+    { "src": "/login.html", "dest": "/login" },
+    { "src": "/index.html", "dest": "/dashboard" },
+    { "src": "/scan.html", "dest": "/scan" },
+    { "src": "/rules.html", "dest": "/rules" },
+    { "src": "/report.html", "dest": "/report" },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/login.html" }
+  ]
+}

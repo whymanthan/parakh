@@ -59,14 +59,68 @@ app.use(cors({ origin: true, credentials: true }));
 app.use(express.json({ limit: '10mb' }));
 
 app.get('/', (req, res) => {
-  res.redirect('/login.html');
+  res.sendFile(path.join(__dirname, 'login.html'));
 });
 
 app.get('/login', (req, res) => {
-  res.redirect('/login.html');
+  res.sendFile(path.join(__dirname, 'login.html'));
 });
 
-app.use(express.static(__dirname));
+app.get('/dashboard', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.get('/scan', (req, res) => {
+  res.sendFile(path.join(__dirname, 'scan.html'));
+});
+
+app.get('/rules', (req, res) => {
+  res.sendFile(path.join(__dirname, 'rules.html'));
+});
+
+app.get('/report', (req, res) => {
+  res.sendFile(path.join(__dirname, 'report.html'));
+});
+
+app.get('/login.html', (req, res) => {
+  res.redirect(301, '/login');
+});
+
+app.get('/index.html', (req, res) => {
+  res.redirect(301, '/dashboard');
+});
+
+app.get('/scan.html', (req, res) => {
+  res.redirect(301, '/scan');
+});
+
+app.get('/rules.html', (req, res) => {
+  res.redirect(301, '/rules');
+});
+
+app.get('/report.html', (req, res) => {
+  res.redirect(301, '/report');
+});
+
+app.use((req, res, next) => {
+  const routeMap = {
+    '/': 'login.html',
+    '/login': 'login.html',
+    '/dashboard': 'index.html',
+    '/scan': 'scan.html',
+    '/rules': 'rules.html',
+    '/report': 'report.html',
+  };
+
+  const target = routeMap[req.path] || routeMap[req.originalUrl];
+  if (target) {
+    return res.sendFile(path.join(__dirname, target));
+  }
+
+  next();
+});
+
+app.use(express.static(__dirname, { index: false }));
 
 function normalizeSourceUrl(sourceUrl) {
   if (!sourceUrl) return '';
@@ -206,10 +260,6 @@ async function fetchPageTextWithFallback(sourceUrl) {
   }
   throw new Error('No readable product page content was returned.');
 }
-
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
 
 app.get('/health', (req, res) => {
   res.json({ ok: true, status: 'ready' });
